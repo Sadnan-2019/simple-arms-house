@@ -20,8 +20,12 @@
 .btn-cart{
 
           padding: 10px;
-          background-color: rgb(88, 81, 81);
+          background-color: rgb(32, 28, 28);
           color: white;
           border: 10px;
           border-radius: 10px;
+}
+.icon{
+
+          margin-left: 10px;
 }
