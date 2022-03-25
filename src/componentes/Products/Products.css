@@ -21,3 +21,8 @@
 
           text-align: center;
 }
+.cart-details{
+
+          position: sticky;
+          top: 0;
+}
