@@ -1,62 +1,74 @@
 [
-          {
-            "_id": "623de3adc07e222bbe542299",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Carla Mcmillan"
-          },
-          {
-            "_id": "623de3ada017e02fc0d8d113",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Trujillo French"
-          },
-          {
-            "_id": "623de3ad1ece5eb3829a7bac",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "David Robinson"
-          },
-          {
-            "_id": "623de3ad6d5e5acc9e9e161f",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Johnnie Cervantes"
-          },
-          {
-            "_id": "623de3ad9bdfe52f6500647c",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Kemp Pollard"
-          },
-          {
-            "_id": "623de3adac0c17458d3687eb",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Brianna Herring"
-          },
-          {
-            "_id": "623de3ad36c47dfdba32f03d",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Opal Aguilar"
-          },
-          {
-            "_id": "623de3ad8c3e886a714face5",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Miranda Travis"
-          },
-          {
-            "_id": "623de3ade738eb0e9ff05bcc",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Velma Brady"
-          },
-          {
-            "_id": "623de3ad00097131455404a1",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Cheri Kent"
-          },
-          {
-            "_id": "623de3adf07f4ba3a874a617",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Macdonald Coleman"
-          },
-          {
-            "_id": "623de3ad15e634597570491e",
-            "picture": "https://unsplash.com/photos/K62u25Jk6vo",
-            "name": "Nolan Walters"
-          }
-        ]
+  {
+    "_id": "623de3adc07e222bbe542299",
+    "img": "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "name": "Carla Mcmillan",
+    "price": 120000
+  },
+  {
+    "_id": "623de3ada017e02fc0d8d113",
+    "img": "https://images.unsplash.com/photo-1595590426346-a9d0348d802f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "name": "Trujillo French",
+    "price": 200000
+  },
+  {
+    "_id": "623de3ad1ece5eb3829a7bac",
+    "img": "https://images.unsplash.com/photo-1591123720164-de1348028a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+    "name": "David Robinson",
+    "price": 300000
+  },
+  {
+    "_id": "623de3ad6d5e5acc9e9e161f",
+    "img": "https://images.unsplash.com/photo-1610165539750-051008c3e799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "name": "Johnnie Cervantes",
+    "price": 500000
+  },
+  {
+    "_id": "623de3ad9bdfe52f6500647c",
+    "img": "https://images.unsplash.com/photo-1571863706194-8c6ba42cc074?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=946&q=80",
+    "name": "Kemp Pollard",
+    "price": 300000
+  },
+  {
+    "_id": "623de3adac0c17458d3687eb",
+    "img": "https://images.unsplash.com/photo-1482649671545-bc53dcf1ad7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "name": "Brianna Herring",
+    "price": 400000
+  },
+  {
+    "_id": "623de3ad36c47dfdba32f03d",
+    "img": "https://images.unsplash.com/photo-1594232352231-11a0958d131c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80",
+    "name": "Opal Aguilar",
+    "price": 700000
+  },
+  {
+    "_id": "623de3ad8c3e886a714face5",
+    "img": "https://images.unsplash.com/photo-1586736937926-062c138b088b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+    "name": "Miranda Travis",
+    "price": 900000
+  },
+  {
+    "_id": "623de3ade738eb0e9ff05bcc",
+    "img": "https://images.unsplash.com/photo-1591123253780-af288771206f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+    "name": "Velma Brady",
+    "price": 400000
+  },
+  {
+    "_id": "623de3ad00097131455404a1",
+    "img": "https://images.unsplash.com/photo-1608306556420-65b5d0b7da4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+    "name": "Cheri Kent",
+    "price": 145980
+  },
+  {
+    "_id": "623de3adf07f4ba3a874a617",
+    "img": "https://images.unsplash.com/photo-1626798010716-c1ada8806751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=527&q=80",
+    "name": "Macdonald Coleman",
+    "price": 958520
+  },
+  {
+    "_id": "623de3ad15e634597570491e",
+    "img": "https://images.unsplash.com/photo-1610057999107-85573912f3a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "name": "Nolan Walters",
+    "price": 584597
+  }
+]

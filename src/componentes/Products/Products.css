@@ -1,0 +1,23 @@
+.products-container{
+
+          display: grid;
+          grid-template-columns: 4fr 1fr;
+           
+}
+
+.product-container{
+
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          padding: 30px;
+          
+}
+.text-one{
+          text-align: center;
+}
+
+.text-two{
+
+          text-align: center;
+}
