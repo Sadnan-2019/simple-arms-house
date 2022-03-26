@@ -52,3 +52,34 @@
           top: 0;
            
 }
+
+
+@media only screen and (max-width: 688px) {
+          /* .container {
+            width: 100%;
+          } */
+        
+          .products-container,.product-container,.cart {
+            background-color: rgb(78, 24, 24);
+            grid-template-columns: repeat(1, 1fr);
+
+          }
+          .products-container {
+            flex-direction: column;
+          }
+          .cart{
+
+                    align-items: center;
+                    /* flex-direction: column; */
+                    justify-content: center;
+                    order: -1;
+                    background-color: aqua;
+                    display: flex;
+          }
+        
+         
+        
+           
+        
+         
+        }
