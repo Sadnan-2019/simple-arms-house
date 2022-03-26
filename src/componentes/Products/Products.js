@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product.js/Product";
+import Question from "../Question/Question";
 import "./Products.css";
 
 const Products = () => {
@@ -75,6 +76,10 @@ const Products = () => {
                
             ></Product>
           ))}
+
+
+
+          
         </div>
         <div className="">
        <div className="cart-pass">
@@ -95,7 +100,7 @@ const Products = () => {
 
            {/* <h1>{carts.length}</h1> */}
            
-      <button className="chose" onClick={()=>ChoseForOne(carts)?carts:""}>Chose one for me</button>
+      <button className="chose" onClick={()=>ChoseForOne(carts)}>Chose one for me</button>
      <button className="remove" onClick={()=>removeHnadler() }>Remove cart</button>
        </div>
        
@@ -103,6 +108,8 @@ const Products = () => {
        
 
       </div>
+
+      <Question></Question>
       
     </div>
   );
