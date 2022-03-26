@@ -17,9 +17,18 @@ const Products = () => {
   const AddToCart = (selectedProduct) => {
     // let newcart =[];
     setCart([...carts,selectedProduct]);
+    // if(selectedProduct ){
+    //   console.log('alrady exists')
+    // }
     // setCart(newcart)
     // console.log(selectedProduct);
   };
+
+  const removeHnadler=()=>{
+    setCart([""]);
+    
+     
+  }
   return (
     <div>
       <h1 className="text-one">My Arms House</h1>
@@ -35,10 +44,33 @@ const Products = () => {
           ))}
         </div>
         <div className="">
-           <Cart carts={carts}></Cart>
+       <div className="cart-pass">
+
+       <h1 className="cart-pass">Selected items</h1>
+          {carts.map((cart)=>(
+            <Cart cart={cart}
+                  key={cart._id}
+            ></Cart>
+
+
+            // <li>{cart.name}</li>
+
+          ))}
+           
+       
+
+
            {/* <h1>{carts.length}</h1> */}
+           
+      <button className="chose">Chose one for me</button>
+     <button className="remove" onClick={()=>removeHnadler(carts)}>Remove cart</button>
+       </div>
+       
         </div>
+       
+
       </div>
+      
     </div>
   );
 };

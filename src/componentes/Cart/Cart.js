@@ -1,20 +1,28 @@
 import React from "react";
 import CartDeatails from "../CartDeatails/CartDeatails";
+// import CartDeatails from "../CartDeatails/CartDeatails";
+import './Cart.css'
 
 const Cart = (props) => {
-//   const {carts}= props.carts;
-  console.log(props.carts);
+  const {cart}= props;
+  // const {carts}= props.carts;
+  // console.log(props.carts);
 
   return (
-    <div>
-      <h1>Selected items</h1>
-          {/* {
-                    carts.map((cart)=>(
-                              <CartDeatails cart={cart}></CartDeatails>
+    <div className="cart">
+       {/* <h1>Selected items</h1> */}
 
-                    ))
-          } */}
+
+      
+ 
+      
+     <h5>Name:{cart.name}</h5>
+      
+   
+    
+          
     </div>
+    
   );
 };
 
