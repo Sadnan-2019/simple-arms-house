@@ -40,6 +40,7 @@ const Products = () => {
               product={product}
               key={product._id}
               AddToCart={AddToCart}
+               
             ></Product>
           ))}
         </div>
@@ -63,7 +64,7 @@ const Products = () => {
            {/* <h1>{carts.length}</h1> */}
            
       <button className="chose">Chose one for me</button>
-     <button className="remove" onClick={()=>removeHnadler(carts)}>Remove cart</button>
+     <button className="remove" onClick={ removeHnadler }>Remove cart</button>
        </div>
        
         </div>
