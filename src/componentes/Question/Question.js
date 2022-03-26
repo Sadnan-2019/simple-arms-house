@@ -45,7 +45,7 @@ const Question = () => {
               useState is hook function.It is allow state variables in the
               functional components. It is pas the initial state to the function
               and returns a variavle from the current state and state upadated
-              the value. So updating be the value from the privious state
+              the value. So updating be the value from the previous state.
             </p>
           </div>
         </div>
