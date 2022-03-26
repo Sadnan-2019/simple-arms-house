@@ -17,7 +17,7 @@ const Cart = (props) => {
  
       
      {/* <h5>{`Name:${cart.name}`}</h5> */}
-     <p className=" ">{ 
+     <p  >{ 
      cart.name?"Name:"+cart.name:null
      
      }</p>

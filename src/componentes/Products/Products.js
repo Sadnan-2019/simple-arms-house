@@ -14,10 +14,17 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
 
-
   const AddToCart = (selectedProduct) => {
     // let newcart =[];
-    setCart([...carts,selectedProduct]);
+    const newCart = [...carts, selectedProduct];
+
+    if (carts.length < 4) {
+      // setCart([])
+      // setCart([...carts,selectedProduct]);
+      setCart(newCart);
+    } else {
+      alert("You can not add more then four items");
+    }
     // if(selectedProduct ){
     //   console.log('alrady exists')
     // }
@@ -25,45 +32,36 @@ const Products = () => {
     // console.log(selectedProduct);
   };
 
-  const removeHnadler=()=>{
+  const removeHnadler = () => {
     setCart([]);
-    
-     
-  }
+  };
 
-  const ChoseForOne=(carts)=>{
-   
-    const filtered = [carts[Math.floor(Math.random() * carts.length)]]
+  const ChoseForOne = (carts) => {
+    const filtered = [carts[Math.floor(Math.random() * carts.length)]];
     // console.log(filtered)
 
     // filtered.filter(item => (
     //   console.log("random",item[0] )
     // )
-  //  if(!carts){
+    //  if(!carts){
 
-  //   console.log("kakaka")
-  //  }
+    //   console.log("kakaka")
+    //  }
     // )
+    // if(!carts){
+
+    //   alert("Please select item")
+    // }else{
     setCart(filtered);
 
-
-
-   
-  // carts.map((item)=>(
-  //   console.log(item)
-  //    [Math.floor(Math.random() * carts.length)]
+    // carts.map((item)=>(
+    //   console.log(item)
+    //    [Math.floor(Math.random() * carts.length)]
 
     // carts[Math.floor(Math.random() * carts.length)]
-  
-
-
-
-
-
-
-  }
+  };
   return (
-    <div className="">
+    <div  >
       <h1 className="text-one">My Arms House</h1>
       <h1 className="text-two">Total Arms :{products.length}</h1>
       <div className="products-container">
@@ -71,46 +69,33 @@ const Products = () => {
           {products.map((product) => (
             <Product
               product={product}
-              key={product._id }
+              key={product._id}
               AddToCart={AddToCart}
-               
             ></Product>
           ))}
-
-
-
-          
         </div>
         <div className="cart">
-       <div className="cart-pass">
+          <div className="cart-pass">
+            <h1  >Selected items</h1>
+            {carts.map((cart) => (
+              <Cart cart={cart} key={cart._id || "id"}></Cart>
 
-       <h1 className=" ">Selected items</h1>
-          {carts.map((cart)=>(
-            <Cart cart={cart}
-                  key={cart._id}
-            ></Cart>
+              // <li>{cart.name}</li>
+            ))}
 
+            {/* <h1>{carts.length}</h1> */}
 
-            // <li>{cart.name}</li>
-
-          ))}
-           
-       
-
-
-           {/* <h1>{carts.length}</h1> */}
-           
-      <button className="chose" onClick={()=>ChoseForOne(carts)}>Chose one for me</button>
-     <button className="remove" onClick={()=>removeHnadler() }>Remove cart</button>
-       </div>
-       
+            <button className="chose" onClick={() => ChoseForOne(carts)}>
+              Chose one for me
+            </button>
+            <button className="remove" onClick={() => removeHnadler()}>
+              Remove cart
+            </button>
+          </div>
         </div>
-       
-
       </div>
 
       <Question></Question>
-      
     </div>
   );
 };
