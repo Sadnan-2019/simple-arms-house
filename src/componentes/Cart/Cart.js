@@ -1,5 +1,5 @@
 import React from "react";
-import CartDeatails from "../CartDeatails/CartDeatails";
+// import CartDeatails from "../CartDeatails/CartDeatails";
 // import CartDeatails from "../CartDeatails/CartDeatails";
 import './Cart.css'
 
@@ -9,7 +9,7 @@ const Cart = (props) => {
   // console.log(props.carts);
 
   return (
-    <div className="cart">
+    <div className="cart" >
        {/* <h1>Selected items</h1> */}
 
 
@@ -17,7 +17,7 @@ const Cart = (props) => {
  
       
      {/* <h5>{`Name:${cart.name}`}</h5> */}
-     <h5>{ 
+     <h5 className="bg-danger">{ 
      cart.name?"Name:"+cart.name:null
      
      }</h5>

@@ -25,7 +25,7 @@ const Products = () => {
   };
 
   const removeHnadler=()=>{
-    setCart([""]);
+    setCart([]);
     
      
   }
@@ -38,7 +38,10 @@ const Products = () => {
     // filtered.filter(item => (
     //   console.log("random",item[0] )
     // )
-   
+  //  if(!carts){
+
+  //   console.log("kakaka")
+  //  }
     // )
     setCart(filtered);
 
@@ -79,7 +82,7 @@ const Products = () => {
        <h1 className="cart-pass">Selected items</h1>
           {carts.map((cart)=>(
             <Cart cart={cart}
-                  key={cart._id || "id" }
+                  key={cart._id}
             ></Cart>
 
 
@@ -92,7 +95,7 @@ const Products = () => {
 
            {/* <h1>{carts.length}</h1> */}
            
-      <button className="chose" onClick={()=>ChoseForOne(carts)}>Chose one for me</button>
+      <button className="chose" onClick={()=>ChoseForOne(carts)?carts:""}>Chose one for me</button>
      <button className="remove" onClick={()=>removeHnadler() }>Remove cart</button>
        </div>
        
