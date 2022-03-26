@@ -16,7 +16,13 @@ const Cart = (props) => {
       
  
       
-     <h5>Name:{cart.name}</h5>
+     {/* <h5>{`Name:${cart.name}`}</h5> */}
+     <h5>{ 
+     cart.name?"Name:"+cart.name:null
+     
+     }</h5>
+
+
       
    
     

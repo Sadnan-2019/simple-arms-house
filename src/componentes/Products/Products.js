@@ -29,6 +29,35 @@ const Products = () => {
     
      
   }
+
+  const ChoseForOne=(carts)=>{
+   
+    const filtered = [carts[Math.floor(Math.random() * carts.length)]]
+    // console.log(filtered)
+
+    // filtered.filter(item => (
+    //   console.log("random",item[0] )
+    // )
+   
+    // )
+    setCart(filtered);
+
+
+
+   
+  // carts.map((item)=>(
+  //   console.log(item)
+  //    [Math.floor(Math.random() * carts.length)]
+
+    // carts[Math.floor(Math.random() * carts.length)]
+  
+
+
+
+
+
+
+  }
   return (
     <div>
       <h1 className="text-one">My Arms House</h1>
@@ -38,7 +67,7 @@ const Products = () => {
           {products.map((product) => (
             <Product
               product={product}
-              key={product._id}
+              key={product._id }
               AddToCart={AddToCart}
                
             ></Product>
@@ -50,7 +79,7 @@ const Products = () => {
        <h1 className="cart-pass">Selected items</h1>
           {carts.map((cart)=>(
             <Cart cart={cart}
-                  key={cart._id}
+                  key={cart._id || "id" }
             ></Cart>
 
 
@@ -63,8 +92,8 @@ const Products = () => {
 
            {/* <h1>{carts.length}</h1> */}
            
-      <button className="chose">Chose one for me</button>
-     <button className="remove" onClick={ removeHnadler }>Remove cart</button>
+      <button className="chose" onClick={()=>ChoseForOne(carts)}>Chose one for me</button>
+     <button className="remove" onClick={()=>removeHnadler() }>Remove cart</button>
        </div>
        
         </div>
