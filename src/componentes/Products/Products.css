@@ -60,7 +60,7 @@
           } */
         
           .products-container,.product-container,.cart {
-            background-color: rgb(78, 24, 24);
+            /* background-color: rgb(78, 24, 24); */
             grid-template-columns: repeat(1, 1fr);
 
           }
