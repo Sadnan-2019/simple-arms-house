@@ -37,22 +37,13 @@ const Products = () => {
   };
 
   const ChoseForOne = (carts) => {
-    const filtered = [carts[Math.floor(Math.random() * carts.length)]];
-    // console.log(filtered)
+    // const filtered = [carts[Math.floor(Math.random() * carts.length)]];
+     if(carts.length ){
+      const filtered = [carts[Math.floor(Math.random() * carts.length)]];
 
-    // filtered.filter(item => (
-    //   console.log("random",item[0] )
-    // )
-    //  if(!carts){
-
-    //   console.log("kakaka")
-    //  }
-    // )
-    // if(!carts){
-
-    //   alert("Please select item")
-    // }else{
-    setCart(filtered);
+      setCart(filtered);
+     }
+    
 
     // carts.map((item)=>(
     //   console.log(item)
@@ -69,28 +60,30 @@ const Products = () => {
           {products.map((product) => (
             <Product
               product={product}
-              key={product._id}
+              key={product.id}
               AddToCart={AddToCart}
             ></Product>
           ))}
         </div>
         <div className="cart">
           <div className="cart-pass">
-            <h1  >Selected items</h1>
+            <h1 >Selected items</h1>
             {carts.map((cart) => (
-              <Cart cart={cart} key={cart._id || "id"}></Cart>
+              <Cart cart={cart} key={cart.id}></Cart>
 
               // <li>{cart.name}</li>
             ))}
 
             {/* <h1>{carts.length}</h1> */}
 
-            <button className="chose" onClick={() => ChoseForOne(carts)}>
+           <div className="py-3">
+           <button className="chose" onClick={() => ChoseForOne(carts)}>
               Chose one for me
             </button>
             <button className="remove" onClick={() => removeHnadler()}>
               Remove cart
             </button>
+           </div>
           </div>
         </div>
       </div>
